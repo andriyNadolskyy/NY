@@ -9,5 +9,5 @@ bs_analyzer = BikeSharingAnalysis(bs_dataset_relative_path)
 # choose a regressor, e.g. a DecisionTreeRegressor, SVR
 regressor = AdaBoostRegressor(DecisionTreeRegressor(max_depth=12), n_estimators=300)
 #regressor = SVR(C=500)
-evaluation_result = bs_analyzer.run(regressor)
+evaluation_result, model = bs_analyzer.run(regressor)
 print evaluation_result
