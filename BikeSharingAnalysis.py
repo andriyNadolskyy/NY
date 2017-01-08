@@ -106,4 +106,4 @@ class BikeSharingAnalysis:
         trained_model = self._train_model(train, regressor)
 
         evaluation_result = self._evaluate_model(trained_model, test)
-        return evaluation_result
+        return evaluation_result, trained_model
